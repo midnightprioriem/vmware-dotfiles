@@ -11,7 +11,8 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
 # antigen theme isuke/droolscar droolscar
-antigen theme dikiaap/dotfiles .oh-my-zsh/themes/oxide 
+#antigen theme dikiaap/dotfiles .oh-my-zsh/themes/oxide 
+antigen theme romkatv/powerlevel10k
 # export DROOLSCAR_SEGMENT_SEPARATOR=' '
 # export DROOLSCAR_DATE_FORMAT="+%m/%d"
 
@@ -28,3 +29,6 @@ antigen theme dikiaap/dotfiles .oh-my-zsh/themes/oxide
 
 # Tell Antigen that you're done.
 antigen apply
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh

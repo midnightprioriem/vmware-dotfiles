@@ -148,9 +148,11 @@ mode "resize" {
     bindsym Mod4+r  mode "default"
 }
 exec xrandr --output default --mode 1920x1080
-exec --no-startup-id feh --bg-fill ~/Pictures/cyberpunk-city-rt.jpg
+exec --no-startup-id feh --bg-fill /vagrant/2jsain4ni2u21.png 
 #exec --nostartup-id nitrogen --restore
-exec --no-startup-id compton --blur-background --blur-method kawase --blur-strength 10 --inactive-opacity .75 --active-opacity .8 --backend glx
+exec --no-startup-id compton --blur-background --blur-method kawase --blur-strength 15 \
+	--active-opacity .8 --inactive-opacity .8 --opacity-rule "99:name *? = 'firefox'"\
+	--backend glx 
 #--opacity-rule 75:'class_g="kitty"' --opacity-rule 75:'name *= "qtcreator"' --backend glx
 # POLYBAR
 # exec --no-startup-id polybar mybar
